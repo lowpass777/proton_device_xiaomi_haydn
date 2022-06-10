@@ -15,6 +15,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
 
+# Lawnchair
+$(call inherit-product, vendor/Lawnchair/lawnchair.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_haydn
 PRODUCT_DEVICE := haydn
